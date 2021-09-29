@@ -1,0 +1,38 @@
+//FOOTER
+.contact-footer{
+  &-bg-color{
+    background-color: #282423;
+  }
+
+  color:#fff;
+
+  .contact {
+    text-align: center;
+
+    p{
+      margin-bottom: 0;
+    }
+
+    ul{
+      list-style-type: none;
+    }
+  }
+
+  .crt-logo{
+      display:none !important;
+  }
+
+  h2{
+    font-size:40px;
+  }
+}
+
+#main-footer{
+  img{
+    //width:30%;
+    display:block;
+    padding:5px 0;
+    margin: auto;
+
+  }
+}

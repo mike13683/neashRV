@@ -1,0 +1,272 @@
+---
+---
+
+@import 'custom/bootstrap-override';
+@import 'bootstrap/bootstrap';
+@import 'custom/includes/header';
+@import 'custom/includes/_social-btn';
+@import 'custom/includes/gallery';
+@import 'custom/includes/footer';
+@import 'custom/includes/hero';
+@import 'custom/helpers/global-classes';
+@import 'custom/helpers/mixins';
+@import 'custom/vendors/juice';
+
+/*
+ * Website Name - Website Name
+ * Date - 9/5/18
+ * Designed by Michael Owens / Dragon Info Tech
+ */
+//googlefont
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700');
+
+
+//Intro
+.intro{
+  position: relative;
+  height: calc(100vh - 135px);
+  width:100%;
+  background: url("{{site.url}}//assets/img/california-6.1.jpg") no-repeat center center;
+
+
+  &__content{
+    @include centerer;
+    text-align:center;
+    color:#fff;
+
+
+    h2{
+      font-size: rem-calc(66px);
+      line-height:1;
+    }
+
+    p{
+      font-size: rem-calc(36px);
+
+    }
+  }
+}
+
+
+//our-rv
+#our-rv{
+  padding:200px 0;
+}
+.our-rv{
+  h3{
+    font-size:rem-calc(26px);
+  }
+
+  .our-rv__header{
+    p{
+      font-size:rem-calc(20px);
+    }
+  }
+
+  .card{
+   margin:10px 5px;
+
+
+  }
+
+  .birth{
+
+    padding:10px;
+
+    p{
+      margin: 0;
+      padding:5px;
+      display: inline-block;
+    }
+
+    position: relative;
+
+    .light-border{
+      position: absolute;
+      width:95px;
+      height:3px;
+      background-color: $primary;
+      left:50%;
+      transform:translateX(-50%);
+    }
+  }
+}
+.card-border{
+  border: 6px solid #EEEEEE;
+}
+//about
+#about{
+  padding:200px 0;
+  background-color: #F6F6F6;
+  margin:25px;
+
+  .about{
+    h2, h3{
+      text-align:left;
+    }
+  }
+
+  .covid{
+    h2{
+      font-size: rem-calc(36px);
+      text-align: left;
+      color: #13D483;
+    }
+
+    &-bg--color{
+      background-color: #e7fbf2;
+    }
+  }
+
+}
+
+//services
+#services{
+  .card{
+    padding:5px;
+  }
+
+  a{
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+
+//review
+
+
+
+//what-to-do
+
+.what-to-do{
+  position: relative;
+  height:100vh;
+  width:100%;
+
+  .col-lg-6{
+    height:100vh;
+  }
+
+  &__content{
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+  }
+  .customNav button{
+    background-color: $primary !important;
+
+    i{
+      padding:10px;
+      color:#fff;
+
+      &:hover{
+        color:darken(#fff,25%)
+      }
+    }
+  }
+
+
+  h2, h3{
+    text-align:left;
+  }
+
+  h3{
+    font-size:rem-calc(26px);
+  }
+
+  .dark-border{
+    position: absolute;
+    width:95px;
+    height:2px;
+    background-color: #000; display:block;
+    //margin-top:50px !important;
+    //left:50%;
+    //transform:translateX(-50%);
+  }
+
+  &__bg-image-1{
+    background: url("{{site.url}}//assets/img/maxime-bhm-9ZnGWdsqNZ4-unsplash.jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  &__bg-image-2{
+    background: url("{{site.url}}//assets/img/formula-1.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+.dark-border{
+  position: absolute;
+  width:95px;
+  height:2px;
+  background-color: #000; display:block;
+}
+.owl-theme .owl-nav .disabled{
+  opacity:1 !important;
+}
+
+//OUR FLEET
+.utility{
+  position: relative;
+  height:400px;
+
+  &-bg-image{
+    background:url("{{site.url}}//assets/img/our-fleet.jpg") no-repeat center center;
+    background-size:cover;
+  }
+
+  &__content{
+    @include centerer;
+    color:#fff;
+    text-align:center;
+
+    h1{
+      font-size:102px;
+    }
+
+    p{
+      font-size:25px;
+
+    }
+  }
+}
+
+//our fleet
+#our-rv,foo{
+  padding:100px 0 !important;
+}
+
+.our-fleet{
+  h3{
+    font-size:rem-calc(26px);
+  }
+
+  p{
+    font-size:rem-calc(18px);
+  }
+}
+
+//freedom motorhome
+.features{
+  img{
+    width:30%;
+  }
+
+  .gearbox,.spec{
+    width:30%;
+
+  }
+
+
+}
+
+.whats-included{
+  img{
+    width:5%;
+  }
+}
+
+.freedom-bg-colour{
+  background-color: #eee;
+}
